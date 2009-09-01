@@ -1,0 +1,12 @@
+* Go through private_variables.sh and add my information
+
+* In app/controllers/application_controller.rb:
+  Uncomment "filter_parameter_logging :password"
+
+* In app/models/user_mailer.rb and app/views/user_mailer/*.rb:
+  Check phrasing of email stuff
+
+* Set up your remote source repository (git?) and upload your project.
+  Losing all your progress sucks, so don't do that!
+
+* Add a license file, so it's clear to everybody what rights you reserve.
