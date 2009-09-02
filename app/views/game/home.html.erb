@@ -1,21 +1,18 @@
 <h1> <%= ENV['RG_SITE_NAME'] %> </h1>
 
 <p>
-  Welcome to <%= ENV['RG_SITE_NAME'] %> at <%= ENV['RG_SITE_URL'] %>.
-  This file is what people will see when they first
-  log into your MUD, so you should probably change it to say something
-  that doesn't sound like 'fill in the blanks', too.
+  Welcome to <%= link_to(ENV['RG_SITE_NAME'], ENV['RG_SITE_URL']) %>.
+  Join the forces of Right against the barbaric hordes, and defend
+  your city!
 </p>
 
 <p>
-  Make sure to fully edit private_variables.sh, if you haven't already.
-  It sets things like the URL and game name above, and many other
-  very important things.
-</p>
-
-<p>
-  You can find it at
-  <span class="filename"><%= __FILE__ %></span>.
+  The Defense of Astrino is a game based very strongly on
+  <a href="http://www.erfworld.com">ErfWorld</a>, an excellent
+  webcomic by Rob Balder and Jamie Noguchi.  All art worth a damn on
+  this site has been taken from that comic, with permission, under the
+  Creative Commons NonCommercial Attribution ShareAlike license.  You
+  can use anything I put up here under those same conditions.
 </p>
 
 <% if @current_user %>
