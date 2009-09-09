@@ -3,9 +3,9 @@
 <h1> The Defense of Astrino </h1>
 
 <p>
-  Welcome to <%= link_to(ENV['RG_SITE_NAME'], ENV['RG_SITE_URL']) %>.
-  Join the forces of Right against the barbaric hordes, and defend
-  your city!
+  Welcome to <%= link_to("The Defense of Astrino", ENV['RG_SITE_URL'])
+  %>.  Join the forces of Right against the barbaric hordes!  Click
+  "register" and defend your city!
 </p>
 
 <p>
@@ -14,7 +14,7 @@
   webcomic by Rob Balder and Jamie Noguchi.  All art worth a damn on
   this site has been taken from that comic, with permission, under the
   Creative Commons NonCommercial Attribution ShareAlike license.  You
-  can use anything I put up here under those same conditions.
+  can use any artwork from this site under the same conditions.
 </p>
 
 <% if @current_user %>
