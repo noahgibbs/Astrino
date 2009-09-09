@@ -12,7 +12,9 @@
 </p>
 
 <%= render :partial => "railsgame/hexgrid_container",
-           :locals => { :id => 'hexgrid', :width => 3, :height => 2 } %>
+           :locals => { :id => 'hexgrid', :grid_size => [ 3, 5 ],
+                        :tile_spacing => [ 106, 31 ],
+                        :tile_size => [72, 62] } %>
 
 <%= render :partial => "railsgame/console_container",
            :locals => { :id => 'world' } %>
