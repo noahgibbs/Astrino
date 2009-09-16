@@ -11,16 +11,16 @@
   Logged in as <%= @current_user.login %>.
 </p>
 
+<%= render :partial => "railsgame/chat_container",
+           :locals => { :id => 'chat' } %>
+
 <%= render :partial => "railsgame/hexgrid_container",
-           :locals => { :id => 'hexgrid', :grid_size => [ 3, 5 ],
-                        :tile_spacing => [ 106, 31 ],
+           :locals => { :id => 'hexgrid', :grid_size => [ 8, 4 ],
+                        :tile_spacing => [ 53, 62 ],
                         :tile_size => [72, 62] } %>
 
 <%= render :partial => "railsgame/console_container",
            :locals => { :id => 'world' } %>
-
-<%= render :partial => "railsgame/chat_container",
-           :locals => { :id => 'chat' } %>
 
 <script type="text/javascript">
 //<![CDATA[

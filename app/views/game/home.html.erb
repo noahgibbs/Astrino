@@ -1,4 +1,4 @@
-<img style="float:right" src="images/troops.png" alt="Loyal JetStone Troops" />
+<img style="float:right" src="images/troops.png" alt="Loyal Jetstone Troops" />
 
 <h1> The Defense of Astrino </h1>
 
@@ -17,10 +17,13 @@
   can use any artwork from this site under the same conditions.
 </p>
 
+<img style="float:left;" src="images/counting_twoll.png"
+     width=120 alt="Twoll counting toward three" />
+
 <% if @current_user %>
 <div id="gameLogin">
   <p> <span id="gameLoginPara">
-    <%= link_to("Click Here", :action => 'full') %> </span>
+    <%= link_to("Play!", :action => 'full') %> </span>
   </p>
 </div>
 <% end %>
@@ -47,4 +50,5 @@
   </td>
 </tr>
 </table>
+
 </div>

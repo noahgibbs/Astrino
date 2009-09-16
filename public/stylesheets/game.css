@@ -1,17 +1,24 @@
 #chat {
   background-color: #F0F0FF;
-  min-height: 150px;
+  min-height: 500px;
+}
+
+#chat_area {
+  float:right;
+  width:20%;
 }
 
 #world {
   background-color: #F0FFF0;
   min-height: 200px;
+  width: 70%;
 }
 
-#chat_debug {
+.debug {
   color: red;
+  /* display: none; */
 }
 
-#world_debug {
-  color: red;
+#hexgrid_data img {
+  border-width: 0px;  /* No frames around link images */
 }
