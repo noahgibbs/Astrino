@@ -18,6 +18,10 @@ class GameController < ApplicationController
     @jcookie = cookies[ActionController::Base.session_options[:key]]
   end
 
+  def error
+    raise "Error raised, as requested!"
+  end
+
   def send_chat_data
     command = "add_chat(\"#{current_user.login}\", " +
         "\"#{escape_javascript h params[:chat_input]}\")"
