@@ -15,7 +15,7 @@ class GameController < ApplicationController
     current_user   # set @current_user variable
 
     # Get cookie for Juggernaut session validation
-    @jcookie = cookies[ActionController::Base.session_options[:key]]
+    @login_cookie = cookies[ActionController::Base.session_options[:key]]
   end
 
   def error

@@ -1,21 +1,12 @@
-<%= javascript_include_tag 'prototype', :juggernaut %>
-<%= juggernaut :client_id => @current_user.login,
-    :session_id => @jcookie,
-    :debug => false,
-    :channels => [ :chat, :game ]
- %>
 <%= stylesheet_link_tag 'game' %>
-<%= javascript_include_tag 'railsgame' %>
 
-<p>
-  Logged in as <%= @current_user.login %>.
-</p>
+<%= render :partial => "railsgame/init" %>
 
 <%= render :partial => "railsgame/chat_container",
            :locals => { :id => 'chat' } %>
 
 <%= render :partial => "railsgame/hexgrid_container",
-           :locals => { :id => 'hexgrid', :grid_size => [ 8, 4 ],
+           :locals => { :id => 'hexgrid', :grid_size => [ 7, 5 ],
                         :tile_spacing => [ 53, 62 ],
                         :tile_size => [72, 62] } %>
 
