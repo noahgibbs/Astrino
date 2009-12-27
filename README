@@ -1,3 +1,14 @@
 The Defense of Astrino, a RailsGame based on ErfWorld
 
 Early stages.
+
+=== Requirements ===
+
+RailsGame, including all dependencies.  Astrino also works much better
+if you have a public-facing IP address with a matching name.  Otherwise,
+it's hard for people to point their web browsers at your server.
+
+=== Installation ===
+
+Copy pv.sh to private_variables.sh.  Then, edit private_variables.sh
+to match your desired server settings.

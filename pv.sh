@@ -1,5 +1,5 @@
 # The site address is where your server can be found.  It might be
-# something like freebeer.com or playbobomud.org.
+# something like joeuser.freebeer.com or playbobomud.org.
 export RG_SITE_ADDRESS=astrino.mydomain.com
 export RG_SITE_PORT=4444
 export RG_SITE_URL=http://$RG_SITE_ADDRESS:$RG_SITE_PORT
